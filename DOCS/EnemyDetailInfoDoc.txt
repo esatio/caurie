@@ -1,0 +1,5 @@
+ID enemy
+score : angka yang menunjukkan penambahan score yang didapat apabila dapat menghancurkan enemy
+money : angka yang menunjukkan penambahan uang yang didapat apabila dapat menghancurkan enemy
+level : level dari senjata
+number: jumlah bullet yang dimunculkan

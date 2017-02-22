@@ -1,0 +1,8 @@
+score : angka yang menunjukkan penambahan score yang didapat apabila dapat menghancurkan enemy
+money : angka yang menunjukkan penambahan uang yang didapat apabila dapat menghancurkan enemy
+effectDamage : angka yang menunjukkan jumlah damage yang diperoleh enemy setiap waktu tertentu
+timerEffectDamage : objek timer yang menentukan kapan effectDamage akan mengurangi health enemy
+pattern : angka yang menunjukkan gerakan mana yang akan digunakan enemy dalam permainan
+pivot : angka yang menunjukkan kapan suatu enemy harus mengubah gerakan pesawat dalam permainan
+timerWeaponSpawn : objek timer yang menunjukkan kapan suatu enemy menghasilkan tembakan
+myGroup : objek group (dari stage) untuk memasukkan tembakan enemy ke dalam permainan

@@ -1,0 +1,30 @@
+1		ID Stage
+Stage1	background
+100		total Musuh dalam 1 stage
+1000	elapsedTime muncul 	*
+5		jmlh				*
+S1		ID Enemy			*
+1		pattern				*
+100		spawn				*
+false	2 nilai x sekaligus	*
+10		posisi X			*
+0		posisi Y			*
+
+8 buah array*
+//1. timer muncul
+//2. jmlh musuh
+//3. ID enemy
+//4. pattern
+//5. spawn
+//6. true / false
+//7. posisi X
+//8. posisi Y
+//musuh dibatasi 100 per-stage
+//Terjadi ketika stage di create	
+	
+25
+(3+1) x 2 + 1 + 1 = 10
+______________________
+35
+
+15

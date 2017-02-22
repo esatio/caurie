@@ -1,0 +1,15 @@
+UPDATE:
+Weapon
+	ada perbaikan untuk fireball
+	bullet dibuat jadi attribute
+	merapikan sedikit
+Stage
+	timer force finish
+Profile
+	Membuat Alexander bisa di-click
+LoadingMenu
+	Membuat baru
+Menu
+	Hapus semua import yg ga butuh
+	
+Membereskan import semua kelas

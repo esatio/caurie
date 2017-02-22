@@ -1,0 +1,10 @@
+ID
+Nama
+Index	(dalam array)
+FrontWeapon (Inisial)
+health
+speed
+shield
+price
+upgrade cost (inisial)
+imagePath

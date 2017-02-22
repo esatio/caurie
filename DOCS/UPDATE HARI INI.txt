@@ -1,0 +1,129 @@
+29 Oktober 2010
+TUGAS HARI INI:
+	1. DEFINE MENGENAI ENEMY DAN PLANE (FILE)	O
+		O Enemy dan Player plane digabung (inisialisasi pesawat, dapat dilihat pada PlaneInfoDoc pada folder DOCS)
+		O Enemy akan ditambahkan score dan money di kelas enemy sendiri
+		O Ditambahkan attribute index untuk menunjuk di mana weapon tersebut berada dalam suatu array weapon 
+		  (Diadakan khusus untuk player)
+		  X jelek karena tidak OOP, bagaimana jadinya??? SEPERTINYA TIDAK APA-APA UNTUK SAAT INI UNTUK MEMUDAHKAN IMPLEMENTASI
+
+	2. SAVE STATE								O
+		O SUDAH SELESAI, SEMUA STATUS + (PLANE DAN WEAPON) TELAH DI LOAD
+		O Belom diterapkan, jadi tidak tahu apakah dapat berjalan dengan baik dalam permainan
+		
+	2. TES COLLISION (CARI TAHU BULLET)
+		X
+	3. ENEMY DI STAGE (DAN PATTERN)
+		X
+	4. Collision dideteksi untuk lokasi ledakan
+		X
+	
+.setWeapon ada yang di comment (di Plane)
+	
+.MUNGKIN ENEMY YANG TIDAK BERGERAK BISA DIMAIN-MAINKAN
+.RearWeapon tidak perlu dipisah. Untuk sementara gunakan algoritma terlebih dahulu
+	-RearWeapon tidak diinisialisasi, harus beli terlebih dahulu
+	-Untuk enemy, akan dibuat setWeapon tersendiri apabila akan menggunakan 2 jenis weapon
+
+	
+	
+	
+
+31 Oktober
+	2. TES COLLISION (CARI TAHU BULLET)
+		- CollisionBulletEnemy
+		O Sudah dilakukan dan berhasil (damage berkurang sesuai firepower)
+		O Poison, money, dan score sudah ditambahkan, TAPI BELOM DI TES (TUNGGU ENEMY DAPAT DIGENERATE DENGAN BENAR, TIDAK MENGGUNAKAN "A")
+		- CollisionPlayerEnemy
+		O Sudah ditambahkan pengurangan shield, penambahan score dan money (jika musuh sampai mati)
+		O Damage enemy akan lebih kecil dibandingkan damage player
+		-CollisionBulletPlayer
+		O Sudah dilakukan, tetapi belom di-test apakah berhasil atau tidak. Ditunggu hingga tembakan enemy fix
+		
+		*Teknik yang digunakan untuk mendeteksi tembakan berbeda untuk tembakan player dan enemy
+			-untuk tembakan player, dilakukan dengan menggunakan sprite ID untuk menyimpan index dari weapon yang digunakan
+			 index digunakan untuk mengidentifikasi weapon yang mana yang digunakan (di set di stage):
+			 playerBullet[i].setID( playerFrontWeapon.getIndex() );
+			 playerWeapon = playerPlane.getWeapon(bulletSprite.getID()); ---> sebagai penunjuk posisi array yang mana
+			 
+			-untuk tembakan enemy, sprite ID digunakan untuk menyimpan firePower dari weapon enemy.
+			 enemyBullet[i].setID( enemyWeapon.getFirePower() );
+			 playerPlane.decCurrentHealth( bulletSprite.getID());
+			 
+	3. ENEMY DAN STAGE (DAN PATTERN)
+		O Sudah di buat code dan konsep, TAPI BELOM DITERAPKAN (untuk enemy di setiap stage dengan membaca data notepad)
+		O Pembacaan data
+		O Dicoba diterapkan
+		O Memasukkan boss
+		O Pattern enemy			
+		X Parallax background belom dicoba
+	4. Collision dideteksi untuk lokasi ledakan
+		
+	5. Load Menu
+	
+	YANG DIGANTI:
+	ENEMY	
+		ganti nama state 
+		mengganti nama timer (menambahkan kata timer di depan + mengubah nama)
+	PLAYER
+		ubah tipe data
+		membetulkan parameter dalam getPlane
+	PLANE	
+		+method getWeapon
+	WEAPON
+		-sprites (attribute dan method getSprites)
+	STAGE
+		mengganti nama timer (menambahkan kata Timer di depannya)
+		
+2 November 2010
+	4. Collision dideteksi untuk lokasi ledakan
+		O menggunakan method dalam kelas CollisionManager
+	5. Load Menu
+		X Belum, diundur untuk hal yang lebih penting
+	6. Stage
+		Menambahkan health, score, dan money pada screen
+		metode untuk pause
+	
+	YANG DIGANTI:
+	ENEMY	
+		melengkapi pattern dari enemy (3 pattern + 1 pattern boss)
+	STAGE
+		Pause
+		+1 image background
+		
+3 November 2010
+	7. Stage
+		O Penghapusan confirmExit (ternyata bisa digantikan pause)
+		O Menentukan bagaimana stage berakhir
+			-Menggunakan 2 variable, bool dan timer
+				bool: menentukan ketika berhenti
+				timer: menentukan kapan mulai berhentinya
+			X Menentukan mulai berhenti dapat, tetapi menentukan
+			  bagaimana klo berhenti belom dapat...T.T
+		
+		X Implementasi
+	8. Pencabangan
+		O Menentukan bagaimana  pencabangan dilakukan
+			-membaca dari file setelah * hingga * / !
+			-menunjukkan menu baru berisikan button 
+			-jmlh button == jumlah string yang dibaca file
+			-masing-masing button diberikan index untuk
+			 ID Story berikutnya yang akan ditampilkan
+		X Kata-kata untuk pencabangan (pilihan)
+	9. ENEMY
+		Mengubah speed di pattern 3 (menjadi 0.06)
+	10.PLAYER
+		Mengubah lastStageID dari int menjadi String
+	11.STAGE
+		Membereskan masalah game over / stage complete
+	12.ABSTRACT MENU
+		Menambahkan mekanisme pemilihan ketika menu di load
+		
+		
+8 November 2010
+	13. KeyWord "this" berfungsi hanya untuk memperjelas coding, yaitu menunjukkan bahwa dapat digunakan secara general
+	14. ABSTRACT MENU
+		 Menambahkan method getButton
+	15. LOAD MENU
+	
+		

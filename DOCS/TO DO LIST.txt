@@ -1,0 +1,12 @@
+javaclopedia@yahoo.com
+1. Load Menu												D 
+2. Story Menu												A (Cerita di notepad)
+3. Upgrade Menu												E (Interface)
+4. Profile Menu												E
+5. Enemy bisa nembak (Tembakan tidak bisa animasi)			O
+6. Weapon dari enemy										E
+7. Weapon berupa laser										E
+8. Jenis enemy berbeda-beda dalam 1 stage, di set di stage	D
+9. Ganti Stage (+ Cerita)									?
+
+*FilePath blom ada. Maw ditunggu waktu masuk LINUX

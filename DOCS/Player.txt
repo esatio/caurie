@@ -1,0 +1,7 @@
+name -> nama dari pemain, digunakan terutama untuk penyimpanan status dari pemain
+score -> score dari pemanin
+money -> uang yang dimiliki pemain
+storyID -> cerita terakhir yang telah ditempuh oleh pemain
+lastStageID -> ID dari stage terakhir yang telah dimainkan (dimenangkan) oleh pemain
+currentPlane -> angka yang menunjukkan pesawat yang mana yang sedang digunakan (index dari 0 - 2)
+allPlanes -> data semua pesawat yang dimiliki pemain (terbatas pada 3 pesawat)

@@ -1,0 +1,16 @@
+planeID : identitas dari pesawat, digunakan untuk mengenali pesawat
+name : nama dari pesawat, digunakan untuk memudahkan dalam mengenal pesawat pemain
+index : angka yang menunjukkan posisi pesawat dalam array pesawat (allPlanes) yang dimiliki player
+allWeapons : 
+currentFrontWeapon : angka yang menunjukkan front weapon yang sedang digunakan suatu pesawat
+currentRearWeapon : angka yang menunjukkan rear weapon yang sedang digunakan suatu pesawat
+health : angka yang menunjukkan nilai maks health suatu pesawat
+currentHealth : angka yang menunjukkan nilai health dari pesawat dalam permainan
+speedX : angka yang menunjukkan kecepatan pesawat bergerak pada sumbu x
+speedY : angka yang menunjukkan kecepatan pesawat bergerak pada sumbu y
+shield : angka yang menunjukkan nilai maks shield suatu pesawat
+currentShield : angka yang menunjukkan nilai shield dari pesawat dalam permainan
+imagePath : path untuk menunjuk pada file gambar yang digunakan pesawat
+price : jumlah uang yang dibutuhkan untuk membeli pesawat
+upgradeCost : jumlah uang yang dibutuhkan untuk meningkatkan level pesawat
+level : menunjukkan tingkat dari pesawat
